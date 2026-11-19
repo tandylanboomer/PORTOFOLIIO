@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Dylan's Portfolio" />
+        <meta name="author" content="Dylan" />
+        <title>Dylan - Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Banner GIF & Section Background Image -->
+        <style>
+            header.masthead {
+                position: relative;
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/download (1) - Copy.gif") no-repeat center center !important;
+                background-size: cover !important;
+                background-attachment: fixed !important;
+            }
+
+            /* Background image pengganti warna putih */
+            section {
+                background: linear-gradient(rgba(11, 1, 54, 0.65), rgba(3, 12, 57, 0.65)), url("assets/img/Untitled Design (2).png") no-repeat center center;
+                background-size: cover;
+                background-attachment: fixed;
+                color: #ffffff;
+            }
+        </style>
+
+        <!-- Extra polish & animations -->
+        <style>
+            html { scroll-behavior: smooth; }
+
+            /* Scroll progress bar */
+            #progress {
+                position: fixed; top: 0; left: 0; height: 4px; width: 0;
+                background: linear-gradient(90deg, #f4623a, #fdcc52);
+                z-index: 2000;
+            }
+
+            /* Typing cursor on the subheading */
+            .masthead-subheading.typing::after {
+                content: "|";
+                margin-left: 4px;
+                animation: blink .8s steps(1) infinite;
+            }
+            @keyframes blink { 50% { opacity: 0; } }
+
+            /* Images: grow into place once, then react to hover */
+            section img.img-fluid {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                transition: transform .5s cubic-bezier(.2, .8, .2, 1), box-shadow .5s ease, opacity .8s ease;
+            }
+            section img.img-fluid.pre-reveal { opacity: 0; transform: scale(.8) rotate(-6deg); }
+            section img.img-fluid:hover {
+                transform: scale(1.06) rotate(2deg);
+                box-shadow: 0 20px 45px rgba(0, 0, 0, .35);
+            }
+
+            /* Headings get a small accent line that draws in on hover */
+            section h2.display-4 {
+                background: linear-gradient(90deg, #f4623a, #fdcc52) no-repeat 0 100% / 0 4px;
+                transition: background-size .5s ease;
+                display: inline-block;
+                padding-bottom: 6px;
+            }
+            section h2.display-4:hover { background-size: 100% 4px; }
+
+            /* Buttons and nav links */
+            .btn-xl { transition: transform .25s ease, box-shadow .25s ease; }
+            .btn-xl:hover { transform: translateY(-4px); box-shadow: 0 12px 25px rgba(0, 0, 0, .35); }
+            .navbar .nav-link { transition: color .3s ease, transform .3s ease; }
+            .navbar .nav-link:hover { transform: translateY(-2px); }
+
+            @media (prefers-reduced-motion: reduce) {
+                html { scroll-behavior: auto; }
+                section img.img-fluid, .btn-xl, .navbar .nav-link, section h2.display-4 { transition: none; }
+                section img.img-fluid.pre-reveal { opacity: 1; transform: none; }
+                .masthead-subheading.typing::after { animation: none; }
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <div id="progress"></div>
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">Dylan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#scroll">More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Hi! My Name Is Dylan</h1>
+                    <h2 class="masthead-subheading mb-0" id="typed" data-text="this is my portofolio pls be nice">this is my portofolio pls be nice</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#about">Learn More</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me Section-->
+        <section id="about">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="p-5">
+                            <img class="img-fluid rounded-0 shadow" src="assets/img/motion_photo_4056889802328719549.jpg" alt="Dylan Profile Picture" />
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <h2 class="display-4">About Me</h2>
+                            <p class="lead mb-3">Halo, saya Tan Dylan, seorang Desainer Komunikasi Visual dengan ketertarikan kuat pada brand identity, desain editorial, dan kampanye visual. Bagi saya, desain yang baik bukan hanya soal estetika, tetapi bagaimana setiap elemen—mulai dari grid, warna, hingga pemilihan jenis huruf—mampu membangun koneksi emosional dan menjawab masalah audiens secara efektif.</p>
+                            <p class="mb-0">Here is my portofolio :D</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content section 1 (Square 1)-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-0 shadow" src="assets/img/Carousel 1 (6).png" alt="Teman Pertama" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Teman Pertama</h2>
+                            <p>Ini adalah feed ig yang saya buat untuk konten instagram gramedia pustaka utama,feed ini dikhususkan untuk orang2 dengan selera buku pertemanan !!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content section 2 (Square 2)-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-0 shadow" src="assets/img/Untitled Design (1).png" alt="Selamat Hari Literasi Sedunia" /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Selamat Hari Literasi Sedunia!</h2>
+                            <p>Ini adalah feed ig yang saya buat untuk konten instagram gramedia pustaka utama untuk merayakan hari literasi sedunia bagi para pecinta buku!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content section 3 (Square 3)-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-0 shadow" src="assets/img/VOTE UR LEADER (1).png" alt="Choose Your Leader" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Choose Your Leader</h2>
+                            <p>Ini adalah hasil ilustrasi yang saya buat untuk tugas akhir saya dengan tema berdemokrasi. Di sini saya menggambar peristiwa pemilihan ketua osis 2025.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Dylan 2026</p></div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <!-- Effects script -->
+        <script>
+            (function () {
+                var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+                var bar = document.getElementById('progress');
+                function updateBar() {
+                    var h = document.documentElement.scrollHeight - window.innerHeight;
+                    bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+                }
+                window.addEventListener('scroll', updateBar, { passive: true });
+                updateBar();
+
+                var el = document.getElementById('typed');
+                var text = el.getAttribute('data-text');
+                if (!reduce) {
+                    el.textContent = '';
+                    el.classList.add('typing');
+                    var i = 0;
+                    (function type() {
+                        el.textContent = text.slice(0, ++i);
+                        if (i < text.length) setTimeout(type, 55);
+                    })();
+                }
+
+                var imgs = document.querySelectorAll('section img.img-fluid');
+                if ('IntersectionObserver' in window && !reduce) {
+                    imgs.forEach(function (img) { img.classList.add('pre-reveal'); });
+                    var io = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (e) {
+                            if (e.isIntersecting) {
+                                e.target.classList.remove('pre-reveal');
+                                io.unobserve(e.target);
+                            }
+                        });
+                    }, { threshold: 0.25 });
+                    imgs.forEach(function (img) { io.observe(img); });
+                }
+            })();
+        </script>
+    </body>
+</html>
